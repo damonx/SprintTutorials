@@ -1,0 +1,30 @@
+/.advk.json
+/build/
+/pb2/
+
+**/bin/**
+
+# Component Level ignores
+/*/build/
+/*/ivy/
+/*/dist/
+/*/nodist/
+/*/osgi/
+/*/work/
+/*/ivy-native/
+/*/platform/
+/*/exports.txt
+/*/*.properties
+/*/Test/derby.log
+!/*/default.properties
+!/*/version.properties
+
+# Project Level ignores
+/*/*/build/
+/*/*/ivy/
+/*/*/dist/
+/*/*/nodist/
+/*/*/platform/
+/*/*/*.properties
+!/*/*/default.properties
+!/*/*/build.properties
