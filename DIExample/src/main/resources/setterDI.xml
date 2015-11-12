@@ -5,7 +5,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 	<bean id="OutputHelper" class="com.mkyong.output.OutputHelper">
 		<property name="outputGenerator">
-			<ref bean="CsvOutputGenerator" />
+			<ref local="CsvOutputGenerator" />
 		</property>
 	</bean>
 	
