@@ -6,7 +6,7 @@ public class Customer implements Serializable
 {
 	long custId;
 	String name;
-	long age;
+	int age;
 	
 	public Customer(){
 	}
@@ -29,10 +29,10 @@ public class Customer implements Serializable
 	public void setName(String name) {
 		this.name = name;
 	}
-	public long getAge() {
+	public int getAge() {
 		return age;
 	}
-	public void setAge(long age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 
