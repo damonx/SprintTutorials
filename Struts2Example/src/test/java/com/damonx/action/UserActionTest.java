@@ -10,21 +10,25 @@
  */
 package com.damonx.action;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.Before;
+import org.junit.Test;
+
 import com.opensymphony.xwork2.Action;
 
-public class UserAction implements Action {
-	private String username;
+public class UserActionTest {
+	private UserAction userAction;
 
-	public String getUsername() {
-		return this.username;
+	@Before
+	public void setUp() {
+		this.userAction = new UserAction();
 	}
 
-	public void setUsername(final String username) {
-		this.username = username;
+	@Test
+	public void testExcute() {
+		final String result = this.userAction.execute();
+		assertThat(result).isEqualTo(Action.SUCCESS);
 	}
 
-	@Override
-	public String execute() {
-		return SUCCESS;
-	}
 }
