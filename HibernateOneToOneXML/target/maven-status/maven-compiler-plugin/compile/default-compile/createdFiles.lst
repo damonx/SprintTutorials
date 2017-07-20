@@ -1,0 +1,4 @@
+com/damonx/common/App.class
+com/damonx/common/StockDetail.class
+com/damonx/persistence/HibernateUtil.class
+com/damonx/common/Stock.class
